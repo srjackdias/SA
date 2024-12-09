@@ -1,0 +1,49 @@
+/* CardAvaliacao.css */
+.card-avaliacao {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px; /* Aumentado para mais espaçamento interno */
+    margin: 12px 0; /* Aumentado para maior separação entre cards */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais forte para um visual mais destacado */
+    width: 100%; /* Garante que o card ocupe toda a largura disponível */
+    max-width: 700px; /* Aumenta o tamanho máximo do card */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o card */
+}
+
+.card-avaliacao p {
+    margin: 6px 0; /* Aumentado o espaçamento entre os textos */
+    font-size: 16px; /* Aumenta o tamanho da fonte para melhor leitura */
+    color: #333;
+}
+
+.estrela {
+    font-size: 24px; /* Aumenta o tamanho das estrelas */
+    color: #ddd;
+    margin-right: 6px; /* Aumenta o espaço entre as estrelas */
+}
+
+.estrela.ativa {
+    color: #ffc107; /* Cor amarela para estrelas ativas */
+}
+
+/* Estilo do botão de excluir avaliação */
+.delete-avaliacao-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px; /* Espaço entre o botão de excluir e o conteúdo */
+}
+
+.delete-avaliacao-button button {
+    background-color: #e74c3c; /* Cor de fundo vermelho para o botão de excluir */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-avaliacao-button button:hover {
+    background-color: #c0392b; /* Cor de fundo mais escura no hover */
+}

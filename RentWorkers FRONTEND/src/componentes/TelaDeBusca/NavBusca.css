@@ -1,0 +1,136 @@
+.NavContainer {
+   display: flex;
+   flex-direction: row;
+   background-color: rgba(120, 208, 210, 1);
+   justify-content: center;
+   align-items: center;
+   height: 40%;
+   width: 100%;
+
+}
+
+.imgLogo {
+
+   width: 200px;
+   background-color: white;
+   height: 200px;
+   margin-right: 20px;
+   border-radius: 200px;
+
+}
+
+.imgPerfil {
+   width: 170px;
+
+
+
+}
+
+.divSelectPainel {
+
+   background-color: white;
+   width: 25%;
+   height: 33%;
+   padding-left: 30px;
+
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+  
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-left: 2px solid black;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+   
+
+}
+
+.TituloUm {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal;
+}
+
+
+
+
+.selectFiltro {
+
+
+ 
+   border: 2px solid black;
+   border-radius: 4px;
+   width: 150px;
+   border-radius: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.divSelectPainelDois {
+
+   background-color: white;
+
+   width: 33%;
+   height: 33%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row;
+
+   border-top-right-radius: 100px;
+   border-bottom-right-radius: 100px;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+   border-right: 2px solid black;
+
+}
+
+.ordernarpow {
+   font-family: Arial, Helvetica, sans-serif;
+
+   font-weight: bold;
+}
+.cards {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   height: 100%;
+   gap: 20px;
+   justify-content: center;
+   background-color: rgba(120, 208, 210, 1);
+   padding: 30px;
+
+}
+
+.divSelectPainelMeio{
+   background-color: white;
+
+   width: 20%;
+   height: 33%;
+   display: flex;
+   align-items: start;
+   justify-content: center;
+   flex-direction: column;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+
+}
+
+
+
+.inputStyle {
+   padding: 15px 45px 15px 25px;
+   border: 2px solid black;
+   border-radius: 4px;
+   width: 180px;
+   border-radius: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.btnBuscar {
+   position: absolute;
+   right: 5px;
+   background: transparent;
+   border: none;
+   cursor: pointer;
+}

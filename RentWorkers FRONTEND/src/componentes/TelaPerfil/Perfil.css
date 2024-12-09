@@ -1,0 +1,201 @@
+/* Reset básico (escopado apenas para .container-Perfil) */
+.container-Perfil * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-Perfil {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f5f7;
+  color: #2d3436;
+}
+
+/* Cabeçalho */
+.container-Perfil .div-cima {
+  background-color: #66b7c9;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-Perfil .div-cima .imgPerfilum {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.container-Perfil .div-cima .fonteNome {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estrutura do perfil */
+.container-Perfil .divPerfil {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Barra lateral esquerda */
+.container-Perfil .divPerfil-Esquerda {
+  width: 250px;
+  background-color: #086dc4;
+  color: #dfe6e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-Perfil .divPerfil-Esquerda div {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.container-Perfil .divPerfil-Esquerda div:hover {
+  background-color: #636e72;
+  color: white;
+}
+
+.container-Perfil .divPerfil-Esquerda .div-ExcluirConta {
+  color: #e17055;
+}
+
+.container-Perfil .divPerfil-Esquerda .div-ExcluirConta:hover {
+  background-color: #d63031;
+  color: white;
+}
+
+/* Conteúdo principal */
+.container-Perfil .div-meio {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Dados do usuário */
+.container-Perfil .dados-usuario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container-Perfil .dados-usuario p {
+  font-size: 18px;
+  color: #2d3436;
+}
+
+/* Botões */
+.container-Perfil .div-botoes {
+  display: flex;
+  gap: 15px;
+}
+
+.container-Perfil .botaoInfo, 
+.container-Perfil .botaoSalvar {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.container-Perfil .botaoSalvar {
+  background-color: #00cec9;
+  color: white;
+}
+
+.container-Perfil .botaoInfo {
+  background-color: #0984e3;
+  color: white;
+}
+
+.container-Perfil .botaoSalvar:hover {
+  background-color: #01b8b2;
+}
+
+.container-Perfil .botaoInfo:hover {
+  background-color: #086dc4;
+}
+
+/* Formulário de edição */
+.container-Perfil .formulario-edicao {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.container-Perfil .campo-edicao {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-Perfil .campo-edicao label {
+  font-size: 14px;
+  color: #636e72;
+  margin-bottom: 5px;
+}
+
+.container-Perfil .campo-edicao input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.container-Perfil .campo-edicao input:focus {
+  border-color: #00cec9;
+}
+
+/* Lista de trabalhos */
+.container-Perfil .listaTrabalhos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container-Perfil .listaTrabalhos p {
+  font-size: 16px;
+  color: #636e72;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-Perfil .divPerfil {
+    flex-direction: column;
+  }
+
+  .container-Perfil .divPerfil-Esquerda {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .container-Perfil .div-meio {
+    margin: 10px;
+    padding: 15px;
+  }
+}

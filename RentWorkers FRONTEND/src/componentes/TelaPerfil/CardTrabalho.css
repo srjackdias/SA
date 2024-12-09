@@ -1,0 +1,72 @@
+/* Card de Trabalho */
+.cardTrabalho {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cardTrabalho:hover {
+    transform: translateY(-5px);  /* Efeito de hover */
+}
+
+/* Cabeçalho do card */
+.cardHeader {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cardHeader h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Corpo do card */
+.cardBody {
+    font-size: 1rem;
+    color: #666;
+}
+
+.cardBody p {
+    margin: 5px 0;
+}
+
+.cardBody strong {
+    color: #333;
+}
+
+.botoes-trabalho {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botaoAceitar {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botaoNegar {
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botaoAceitar:hover {
+    background-color: darkgreen;
+}
+
+.botaoNegar:hover {
+    background-color: darkred;
+}

@@ -1,0 +1,172 @@
+/* Container principal de login */
+.containerLogin {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Div da imagem */
+.divImagem {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #abd7d6;
+}
+
+.imgStyle {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Div do formulário de login */
+.divFormLogin {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #abd7d6;
+}
+
+.divForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  height: auto; /* Ajuste para manter a altura do formulário */
+  gap: 20px; /* Espaçamento entre os campos */
+}
+
+/* Título do formulário */
+.divTitulo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Subtítulo do formulário */
+.divSubTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+/* Divs para email e senha */
+.divEmail, .divSenha {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo dos inputs */
+.inptLogin {
+  width: 90%;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do botão */
+.buttonStyle {
+  width: 90%;
+  height: 50px;
+  font-size: 15px;
+  background-color: #66b7c9;
+  border-radius: 5px;
+  border-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.buttonStyle:hover {
+  background-color: #54989c;
+}
+
+/* Div do botão de login */
+.divButtonLogin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsividade para telas menores que 1440px */
+@media (max-width: 1440px) {
+  .divImagem {
+      width: 45%;
+  }
+
+  .divFormLogin {
+      width: 55%;
+  }
+
+  .divForm {
+      width: 80%;
+      gap: 15px;
+  }
+
+  .divTitulo {
+      font-size: 30px;
+  }
+
+  .divSubTitulo {
+      font-size: 18px;
+  }
+
+  .inptLogin {
+      width: 80%;
+      height: 45px;
+  }
+
+  .buttonStyle {
+      width: 80%;
+      height: 55px;
+  }
+}
+
+/* Responsividade para telas menores que 1024px */
+@media (max-width: 1024px) {
+  .divImagem {
+      display: none;
+  }
+
+  .divFormLogin {
+      width: 100%;
+  }
+
+  .divForm {
+      width: 90%;
+  }
+
+  .divTitulo {
+      font-size: 25px;
+  }
+
+  .divSubTitulo {
+      font-size: 16px;
+  }
+
+  .inptLogin {
+      width: 100%;
+      height: 45px;
+  }
+
+  .buttonStyle {
+      width: 100%;
+      height: 50px;
+  }
+}

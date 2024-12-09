@@ -1,0 +1,266 @@
+/* Estilos Gerais */
+.myPage * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.myPage body {
+   font-family: 'Roboto', sans-serif;
+   background-color: #f8f9fa;
+   overflow-x: hidden;
+}
+
+/* Animations */
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes slideIn {
+   0% {
+      transform: translateX(-100%);
+   }
+   100% {
+      transform: translateX(0);
+   }
+}
+
+/* Navbar */
+.myPage .navContainer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   background-color: white;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   animation: fadeIn 1s ease-out; /* Fade-in effect for Navbar */
+}
+
+.myPage .logoDiv {
+   display: flex;
+   align-items: center;
+}
+
+.myPage .logoImage {
+   width: 200px;
+   height: auto;
+}
+
+.myPage .buttonsNav {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.myPage .buttonsHome {
+   font-size: 18px;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   background-color: #66b7c9;
+   color: white;
+   text-decoration: none;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   animation: fadeIn 1.5s ease-out; /* Fade-in for buttons */
+}
+
+.myPage .buttonsHome:hover {
+   background-color: #54a2b2;
+}
+
+/* Primeira Seção: Mensagem de Boas-Vindas */
+.myPage .bodyContainer {
+   display: flex;
+   height: 100vh;
+   width: 100%;
+   animation: fadeIn 1s ease-out; /* Fade-in effect for Body */
+}
+
+.myPage .bodyMsg {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+.myPage .bodyMensagemContainer {
+   max-width: 500px;
+   text-align: center;
+   animation: slideIn 1s ease-out; /* Slide-in effect for text */
+}
+
+.myPage .tituloMsgBody {
+   font-size: 35px;
+   color: #333;
+   margin-bottom: 15px;
+}
+
+.myPage .descMsgBody {
+   font-size: 18px;
+   color: #555;
+   line-height: 1.6;
+   margin-bottom: 20px;
+}
+
+.myPage .actionButton {
+   padding: 10px 20px;
+   font-size: 18px;
+   border: none;
+   border-radius: 4px;
+   background-color: #66b7c9;
+   color: white;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.myPage .actionButton:hover {
+   background-color: #54a2b2;
+}
+
+.myPage .divImagemHome {
+    background-image: url("images/LandpageHomeImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    width: 40%;
+    animation: fadeIn 1.5s ease-out; /* Fade-in for image */
+}
+
+/* Divisor */
+.myPage .divisor {
+   width: 100%;
+   text-align: center;
+   margin: 20px 0;
+}
+
+.myPage .divisor hr {
+   width: 80%;
+   border: none;
+   border-top: 2px solid #ddd;
+}
+
+/* Segunda Seção: Sobre Nós */
+.myPage .sobreContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #f4f4f4;
+   padding: 20px;
+   animation: fadeIn 1.5s ease-out; /* Fade-in effect for About section */
+}
+
+.myPage .sobreMsg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 80%;
+   max-width: 800px;
+   text-align: center;
+   animation: slideIn 1s ease-out; /* Slide-in effect for About text */
+}
+
+.myPage .tituloSobre {
+   font-size: 35px;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+.myPage .descSobre {
+   font-size: 20px;
+   color: #555;
+   line-height: 1.6;
+   margin-bottom: 15px;
+   text-align: justify;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.myPage .iconSobre {
+   font-size: 25px;
+   color: #66b7c9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+   .myPage .tituloMsgBody, .myPage .tituloSobre {
+       font-size: 28px;
+   }
+
+   .myPage .descMsgBody, .myPage .descSobre {
+       font-size: 16px;
+   }
+
+   .myPage .divImagemHome {
+       display: none;
+   }
+
+   .myPage .bodyContainer, .myPage .sobreContainer {
+       flex-direction: column;
+   }
+}
+
+/* Footer */
+.myPage .footerContainer {
+   width: 100%;
+   background-color: #66b7c9;
+   color: #fff;
+   padding: 40px 20px;
+   animation: fadeIn 2s ease-out; /* Fade-in effect for Footer */
+}
+
+.myPage .footerContent {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.myPage .footerLogo img {
+   width: 150px;
+   height: auto;
+   margin-bottom: 20px;
+   filter: brightness(0) invert(1);
+}
+
+.myPage .footerSocials h3 {
+   margin-bottom: 10px;
+   font-size: 18px;
+   color: #f0f0f0;
+}
+
+.myPage .footerSocials .socialIcons {
+   display: flex;
+   gap: 15px;
+}
+
+.myPage .socialIcon {
+   font-size: 24px;
+   color: #fff;
+   transition: color 0.3s;
+   cursor: pointer;
+}
+
+.myPage .socialIcon:hover {
+   color: #54a2b2;
+}
+
+.myPage .footerBottom {
+   text-align: center;
+   margin-top: 20px;
+   font-size: 14px;
+   color: #f0f0f0;
+}
+
+.myPage .footerBottom p {
+   margin: 0;
+}

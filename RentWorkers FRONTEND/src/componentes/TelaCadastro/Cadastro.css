@@ -1,0 +1,344 @@
+/* Estilo para telas grandes (como PC) */
+@media (min-width: 1024px) {
+   .containerCadastro {
+     display: flex;
+     width: 100%;
+     height: 100%;
+   }
+   .divImagem {
+     width: 50%;
+     height: 100%;
+     background-color: rgb(181, 218, 227);
+     background-image: url("images/imagemCadastro.jpg");
+     background-repeat: no-repeat;
+     background-size: contain;
+   }
+   .divCadastro {
+     display: flex;
+     align-items: center;
+     width: 50%;
+     height: 100%;
+     background-color: #b5d9e5;
+   }
+   .formCadastro {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     border-radius: 25px;
+     width: 100%;
+     height: 90%;
+     gap: 3px;
+   }
+   .divFraseEfeito {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     width: 75%;
+     height: 15%;
+   }
+   .lblFraseEfeito {
+     font-size: 20px;
+   }
+   .titleCad {
+     font-size: 25px;
+     display: flex;
+     align-items: center;
+     justify-items: self-end;
+     flex-direction: column;
+     width: 100%;
+     height: 12%;
+   }
+   .divDadosEscritos {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     width: 100%;
+     height: 40%;
+     padding-top: 10px;
+   }
+   .distanceDiv {
+     display: flex;
+     gap: 25px;
+   }
+   .inptCss {
+     width: 200px;
+     height: 40px;
+     padding-left: 10px;
+     font-size: 15px;
+     border-radius: 5px;
+     border-color: transparent;
+   }
+   .radioButton {
+     border-style: double;
+     width: 445px;
+     height: 50px;
+     border-radius: 2px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 75px;
+     padding-left: 5px;
+     border-color: white;
+     background-color: white;
+   }
+   .divButton {
+     width: 100%;
+     height: 25%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+   }
+   .buttonCadastro {
+     width: 455px;
+     height: 50px;
+     font-size: 15px;
+     background-color: #66b7c9;
+     border-radius: 5px;
+     border-color: transparent;
+   }
+
+   .error {
+      color: red;
+      font-size: 0.875em;
+      margin-top: 5px;
+   }
+  
+ }
+ 
+ /* Responsividade para telas maiores (1440px e acima) */
+ @media (min-width: 1440px) {
+   .containerCadastro {
+     display: flex;
+     width: 100%;
+     height: 100%;
+   }
+   .divImagem {
+     width: 50%;
+     height: 100%;
+     background-color: rgb(181, 218, 227);
+     background-image: url("images/imagemCadastro.jpg");
+     background-repeat: no-repeat;
+     background-size: contain;
+   }
+   .divCadastro {
+     display: flex;
+     align-items: center;
+     width: 50%;
+     height: 100%;
+     background-color: #b5d9e5;
+   }
+   .formCadastro {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     border-radius: 25px;
+     width: 100%;
+     height: 90%;
+     gap: 5px;
+   }
+   .divFraseEfeito {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     width: 75%;
+     height: 10%;
+   }
+   .lblFraseEfeito {
+     font-size: 20px;
+   }
+   .titleCad {
+     font-size: 25px;
+     display: flex;
+     align-items: center;
+     justify-items: self-end;
+     flex-direction: column;
+     width: 100%;
+     height: 10%;
+   }
+   .divDadosEscritos {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     width: 100%;
+     height: 40%;
+     padding-top: 10px;
+   }
+   .distanceDiv {
+     display: flex;
+     gap: 25px;
+   }
+   .inptCss {
+     width: 200px;
+     height: 40px;
+     padding-left: 10px;
+     font-size: 15px;
+     border-radius: 5px;
+     border-color: transparent;
+   }
+   .radioButton {
+     border-style: double;
+     width: 445px;
+     height: 50px;
+     border-radius: 2px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 75px;
+     padding-left: 5px;
+     border-color: white;
+     background-color: white;
+   }
+   .divCondicionalEspecialidade {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 50px;
+     width: 100%;
+     background-color: transparent;
+   }
+   .divCondicionalAtendida {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-style: double;
+     border-color: transparent;
+     border-radius: 2px;
+     height: 100%;
+     width: 450px;
+     gap: 10px;
+     background-color: white;
+   }
+   .divButton {
+     width: 100%;
+     height: 18%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+   }
+   .buttonCadastro {
+     width: 455px;
+     height: 50px;
+     font-size: 15px;
+     background-color: #66b7c9;
+     border-radius: 5px;
+     border-color: transparent;
+   }
+ }
+ 
+ /* Responsividade para telas menores (como tablets e smartphones) */
+ @media (max-width: 1024px) {
+   .containerCadastro {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     height: 100%;
+   }
+   .divImagem {
+     width: 100%;
+     height: 50%;
+     background-color: rgb(181, 218, 227);
+     background-image: url("images/imagemCadastro.jpg");
+     background-repeat: no-repeat;
+     background-size: contain;
+   }
+   .divCadastro {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 50%;
+     background-color: #b5d9e5;
+   }
+   .formCadastro {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     border-radius: 25px;
+     width: 90%;
+     height: 80%;
+     gap: 10px;
+   }
+   .divFraseEfeito {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     height: 10%;
+   }
+   .lblFraseEfeito {
+     font-size: 16px;
+   }
+   .titleCad {
+     font-size: 20px;
+     display: flex;
+     align-items: center;
+     justify-items: self-end;
+     flex-direction: column;
+     width: 100%;
+     height: 10%;
+   }
+   .divDadosEscritos {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 15px;
+     width: 100%;
+     height: 40%;
+     padding-top: 10px;
+   }
+   .distanceDiv {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+   }
+   .inptCss {
+     width: 80%;
+     height: 40px;
+     padding-left: 10px;
+     font-size: 14px;
+     border-radius: 5px;
+     border-color: transparent;
+   }
+   .radioButton {
+     border-style: double;
+     width: 100%;
+     height: 50px;
+     border-radius: 2px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 10px;
+     padding-left: 5px;
+     border-color: white;
+     background-color: white;
+   }
+   .divButton {
+     width: 100%;
+     height: 15%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+   }
+   .buttonCadastro {
+     width: 100%;
+     height: 50px;
+     font-size: 15px;
+     background-color: #66b7c9;
+     border-radius: 5px;
+     border-color: transparent;
+   }
+ }
